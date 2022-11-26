@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/textoII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/textinicial1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/textoI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/textinicial2" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:drawableEnd="@drawable/ic_email"
+                android:hint="@string/e_mail"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_senhas"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:autofillHints="senha"
+                android:drawableEnd="@drawable/ic_eye"
+                android:enabled="false"
+                android:fadeScrollbars="false"
+                android:hint="@string/senha"
+                android:inputType="textPassword"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/textoII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/dados_pessoais"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/edit_nome"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/nome"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_data"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/data"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_cpf"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/cpf"
+                android:importantForAutofill="no"
+                android:inputType="number|text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/textoII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/endereco_string"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/edit_cep"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/cep"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_endereco"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/endereco"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_cidade"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/cidade"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_estado"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/estado"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <EditText
+                android:id="@+id/edit_tel"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:hint="@string/tel"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/textoI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/dia"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/edit_diai"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_margin="4dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_entrar"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/entrar"
+                android:onClick="telaLogado"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

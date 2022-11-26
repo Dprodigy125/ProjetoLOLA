@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LOLA_SORTEIO-N2</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Não possui conta? Cadastre-se</string>
+    <string name="textentradas">Ou continuar com:</string>
+    <string name="textinicial1">Olá!</string>
+    <string name="textinicial2">Faça o seu login para poder ficar por dentro dos nossos sorteios e promoções</string>
+    <string name="textesqueceu">Esqueceu a senha?</string>
+    <string name="nome">Nome Completo</string>
+    <string name="dados_pessoais">Dados Pessoais</string>
+    <string name="endereco_string">Endereço</string>
+    l<string name="data">Data de Nascimento</string>
+    <string name="tel">Telefone</string>
+    <string name="cep">CEP</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="dia">Qual dia você deseja ir no Lollapalooza?</string>
+    <string name="cpf">CPF</string>
+    <string name="todo">TODO</string>
+    <string name="todoI">TODO</string>
+    <string name="todoII">TODO</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="logo">logo</string>
+    <string name="endereco">Endereço</string>
+    <string name="background_lola">background_lola</string>
+
+</resources>

@@ -1,0 +1,153 @@
+<script type="text/javascript" src="./js/jquery.js"></script>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+
+      <header>
+            <nav>
+            <a href="index.html"><img class="nav-logo" src="./img/logo_rio.png" /></a>
+            <ul class="nav-list">
+              <li><a href="./regulamento.html">REGULAMENTO</a></li>
+              <li><a href="./index.html">SOBRE</a></li>
+              <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
+            </ul>
+            </nav>
+            <div class="imagem-central">
+              <img src="./img/Logo-rock-in-rio-hero-min.png" />
+              <h3 class="subtitulo">INSCREVA-SE E CONCORRA PARA UM DOS DIAS DO ROCK IN RIO</h3>
+            </div>
+      </header>
+
+    <main>
+
+
+      <div id="bloco-principal1" class="bloco-ticket bloco-principal1">
+        <div class="bloco-menor">
+        <h3>SOBRE</h3>
+        <p>O Rock in Rio é um festival de música idealizado pelo empresário brasileiro Roberto Medina pela primeira vez em 1985. É reconhecido como um dos maiores festivais musicais do planeta. Foi originalmente organizado no Rio de Janeiro, de onde vem o nome. Tornou-se um evento de repercussão em nível mundial e, em 2004, teve a sua primeira edição fora do Brasil em Lisboa, Portugal.
+
+          Ao longo da sua história, o Rock in Rio teve 20 edições, oito no Brasil, oito em Portugal, três na Espanha e uma nos Estados Unidos. Em 2008, foi realizado pela primeira vez em dois locais diferentes, Lisboa e Madrid. Além destas, duas edições foram canceladas: Madrid e Buenos Aires, ambas programadas para 2014.
+          
+          O hino do festival é de autoria do compositor Nelson Wellington e do maestro Eduardo Souto Neto e foi gravado originalmente pelo grupo Roupa Nova. O festival é considerado o oitavo melhor do mundo pelo site especializado Festival Fling. Desde a quarta edição o festival costuma ocorrer bianualmente no início da primavera em seu país de origem (Brasil). A última edição do festival aconteceu em 2019 dentro do Parque Olímpico do Rio de Janeiro.</p>
+        </div>
+
+        <div class="bloco-menor2 bloco-menor-meio">
+          <img src="./img/arte-rock.png" class="arte-rock-vertical">
+          <img src="./img/arte-rock-horizontal.png" class="arte-rock-horizontal">
+        </div>
+        <div class="fundo-ticket">
+          <img src="./img/borda-ticket.png" class="borda-ticket">
+          <img src="./img/pontilhado.svg" class="pontilhado">
+          <img src="./img/borda-ticket.png" class="borda-ticket" style="transform: scaleX(-1);">
+        </div>
+        <div class="barcode">
+          <img src="./img/barcode.webp" style="width:10vw">
+        </div>
+      </div>
+
+      <div id="bloco2" class="bloco-ticket">
+        <br><h2>INSCREVA-SE</h2>
+        <form action="./php/autenticacadastro.php" method="post">
+          <div class="form-group">
+            <div class="each-label">
+              <label for="nomecompleto" class="label-form">Nome Completo</label>
+              <input type="text" id="nome-completo" class="input-required " name="name" required>
+            </div>
+            <div class="each-label">
+              <label for="c" class="label-form">CPF</label>
+              <input type="text" oninput="mascaracpf(this)" id="cpf" class="input-required" maxlength="11" name="cpf" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="email" class="label-form">E-mail</label>
+              <input type="email" id="email" class="input-required " name="email" required>
+            </div>
+            <div class="each-label">
+              <label for="senha" class="label-form">Senha</label>
+              <input type="password" id="senha" class="input-required" name="senha" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="data-de-nascimento" class="label-form">Data de Nascimento</label>
+              <input type="date" id="data-de-nascimento" class="input-required" name="dataN" required>
+            </div>
+            <div class="each-label">
+              <label for="telefone" class="label-form">Telefone</label>
+              <input type="text" id="telefone" oninput="mascara(this, mascaratelefone)" class="input-required" name="tele">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="cep" class="label-form">CEP</label>
+              <input type="text" oninput="mascaracep(this)" id="cep" class="input-required" maxlength="8" name="cep" required>
+            </div>
+            <div class="each-label">
+              <label for="lograduro" class="label-form">Endereço</label>
+              <input type="text" id="logradouro" class="input-required " name="endereco" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="complemento" class="label-form">Complemento</label>
+              <input type="text" id="complemento" class="input-required " name="complemento" required>
+            </div>
+            <div class="each-label">
+              <label for="bairro" class="label-form">Bairro</label>
+              <input type="text" id="bairro" class="input-required " name="bairro" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="localidade" class="label-form">Cidade</label>
+              <input type="text" id="localidade" class="input-required" name="cidade" required>
+            </div>
+            <div class="each-label">
+              <label for="uf" class="label-form">Estado</label>
+              <input type="text" id="uf" class="input-required" name="uf" required>
+            </div>
+          </div>
+            <div class="each-label">
+              <label for="dia-do-show" class="label-form">Escolha o dia do show:</label>
+              <select id="dia-do-show" class="input-required altura40" name="dia" required>
+                <option value="2">2 de Setembro</option>
+                <option value="3">3 de Setembro</option>
+                <option value="4">4 de Setembro</option>
+                <option value="8">8 de Setembro</option>
+                <option value="9">9 de Setembro</option>
+                <option value="10">10 de Setembro</option>
+                <option value="11">11 de Setembro</option>
+              </select>
+            </div>
+              <div class="form-group">
+              <div class="each-label">
+                <label for="justificativa-promo" class="label-form mobile-fix-textbox">Por que você merece ganhar o ingresso para o Rock in Rio?</label>
+                <textarea id="justificativa-promo" class="input-required" rows="4" cols="50" name="justificativa"></textarea>
+              </div> 
+            </div>
+            <input class="submit" type="submit" value="Participar da promoção!" style="margin:2vh 0 2vh 0;">
+            <div class="fundo-ticket">
+              <img src="./img/borda-ticket.png" class="borda-ticket">
+              <img src="./img/pontilhado.svg" class="pontilhado">
+              <img src="./img/borda-ticket.png" class="borda-ticket" style="transform: scaleX(-1);">
+            </div>
+            <div class="barcode">
+              <img src="./img/barcode.webp" style="width:10vw">
+            </div>
+          </div>
+            </div>
+
+            </form>
+          <script type="text/javascript" src="./js/main.js"></script>
+    </main>  
+    </body>
+</html>

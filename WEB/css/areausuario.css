@@ -1,0 +1,108 @@
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+}
+
+
+.meu-cadastro { 
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+
+
+}
+
+.bold {
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+@media (max-width: 590px) {
+    body{
+        font-size: 1em;
+        background: url(../img/background-mobile.png), rgb(27, 27, 27);
+    }
+
+    nav {
+    height: 22vh;
+    }
+    .nav-list {
+        font-size:12px;
+        text-align: center;
+        top: 8vh;
+        height:5vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        line-height:2;
+    }
+
+    .bloco-menor2 {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .bloco-ticket{
+        display: flex;
+        margin: 20px 0px 20px 0px;
+        width: 100%;
+        background-image: none;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: center;
+    }
+    .nav-list li {
+        margin-left:0;
+    }
+
+    .arte-rock-vertical{
+        width:100%;
+        display:none;
+    }
+    
+    .arte-rock-horizontal{
+        width:100%;
+        display:block;
+    }
+
+    input, select, textarea {
+        width: 200px;
+        padding: 15px 10px 12px 20px;
+        margin: 10px 0px 20px 0px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(233, 233, 233);
+        height: 20px;
+    }
+
+    textarea{
+        width: 90%;
+        height: 100px;
+        margin: 0 auto;
+    }
+    
+    .mobile-fix-textbox{
+        text-align: center;
+        display: block;
+        margin: 10px;
+    }
+    
+    .each-label {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco-menor {
+        width: 100%;
+    }
+
+    .submit {
+        font-size: 1em;
+    }
+}
