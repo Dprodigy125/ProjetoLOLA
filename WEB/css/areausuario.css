@@ -4,6 +4,10 @@ p {
     font-weight: 400;
     text-align: center;
     padding: 0;
+    color: rgb(19, 19, 19);
+    line-height: 1.5;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
@@ -23,8 +27,13 @@ p {
 
 @media (max-width: 590px) {
     body{
-        font-size: 1em;
-        background: url(../img/background-mobile.png), rgb(27, 27, 27);
+        font-size:1em;
+        color: rgb(19, 19, 19);
+        line-height: 1.5;
+        width: 100%;
+        font-family: 'Chakra Petch', sans-serif;
+        background: #00BCF1;
+        background-size: cover;
     }
 
     nav {

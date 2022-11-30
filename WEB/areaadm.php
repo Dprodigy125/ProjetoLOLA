@@ -3,19 +3,19 @@
 <html>
     <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./css/login.css">
-        <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
+        <link rel="stylesheet" type="text/css" href="./css/login-page.css">
+        <title>Projeto Lollapalooza - Desenvolvimento Mobile 6o Semestre</title>
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
           </style>
     </head>
 
   <header>
         <nav>
-        <a href="index.html"><img class="nav-logo" src="./img/logo_rio.png" /></a>
+        <a href="index.html"><img class="nav-logo" src="./img/lolla-logo.png" /></a>
         <ul class="nav-list">
+        <li><a href="./index.html">HOME</a></li>
           <li><a href="./regulamento.html">REGULAMENTO</a></li>
-          <li><a href="./index.html">SOBRE</a></li>
           <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
           <li><a href="./php/logout.php">SAIR</a></li>
         </ul>

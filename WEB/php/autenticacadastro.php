@@ -18,12 +18,10 @@
 	$justificativa = $_POST["justificativa"];
 
 	$endereco = $_POST["endereco"];
-	$complemento = $_POST["complemento"];
-	$bairro = $_POST["bairro"];
 	$cidade = $_POST["cidade"];
 	$uf = $_POST["uf"];
 
-	$enderecocompleto = $endereco . ", " . $bairro . ", " . $cidade . ", " . $uf . ", " . $complemento; 
+	$enderecocompleto = $endereco . ", " . $cidade . ", " . $uf . ", "; 
 
 	//monta sql para o banco de dados ,
 	$sql = "INSERT  INTO  pseudo_dados (NomeCompleto, CPF, Email, Senha, DataNascimento, Telefone, CEP, Endereco, dataida, justificativa)  

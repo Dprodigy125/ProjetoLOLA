@@ -3,31 +3,35 @@
 <html>
     <head>
       <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./css/login.css">
-        <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
+      <link rel="stylesheet" type="text/css" href="./css/login-page.css">  
+        <title>Projeto Lollapalooza - Desenvolvimento Web 5o Semestre</title>
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
           </style>
     </head>
 
-  <header>
-        <nav>
-        <a href="index.html"><img class="nav-logo" src="./img/logo_rio.png" /></a>
-        <ul class="nav-list">
-          <li><a href="./regulamento.html">REGULAMENTO</a></li>
-          <li><a href="./index.html">SOBRE</a></li>
-          <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
-        </ul>
-        </nav>
-  </header>
+    <header>
+      <nav>
+      <a href="index.html"><img class="nav-logo" src="./img/lolla-logo.png" /></a>
+      <ul class="nav-list">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./regulamento.html">REGULAMENTO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+      </ul>
+      </nav>
+</header>
   
   <body>
   <main>
-      <div id="bloco-login" class="bloco-ticket bloco-login">
+    <div id="bloco-sem-geral" class="bloco-sem-geral">
+      <img src="./img/Lolla-Patins.png" class="arte-patins-horizontal">
+  </div>
+      <div id="bloco-login" class="bloco-geral bloco-login">
         <img src="">
-        <h2>Página de Login</h2>
+        
         <form action="./php/autenticalogin.php" method="post">
           <div class="form-group">
+            <h2>Página de Login</h2>
             <label for="email" class="label-form">E-mail</label>
             <input type="email" id="email" class="input-required" name="email">
           </div>
@@ -35,20 +39,17 @@
             <label for="senha" class="label-form">Senha</label>
             <input type="password" id="senha" class="input-required" name="senha">
             <a style="color: rgb(226, 0, 94); text-decoration: none;" href="#">Esqueci minha senha</a>
+            <input class="submit" type="submit" value="login">
           </div>
         
-        <input class="submit" type="submit" value="login">
+        
         </div>
 
-        <div id="bloco-sem-ticket" class="bloco-sem-ticket">
-          <img src="./img/arte-rock.png" class="arte-rock-vertical">
-          <img src="./img/arte-rock-horizontal.png" class="arte-rock-horizontal">
-      </div>
+
     </div> 
 
     </div>
           <script type="text/javascript" src="./js/main.js"></script>
         </main>
         </body>
-
 </html>

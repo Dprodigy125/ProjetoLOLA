@@ -4,57 +4,45 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <title>Projeto Rock in Rio - Desenvolvimento Web 5o Semestre</title>
+        <title>Projeto Lollapalooza - Desenvolvimento Mobile 6o Semestre</title>
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
         </style>
     </head>
-    <body>
 
+    <body>
+      <div class="hero">
       <header>
             <nav>
-            <a href="index.html"><img class="nav-logo" src="./img/logo_rio.png" /></a>
+            <a href="index.html"><img class="nav-logo" src="./img/lolla-logo.png" /></a>
             <ul class="nav-list">
+              <li><a href="./index.html">HOME</a></li>
               <li><a href="./regulamento.html">REGULAMENTO</a></li>
-              <li><a href="./index.html">SOBRE</a></li>
-              <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
+              <li><a href="./login.html">LOGIN</a></li>
             </ul>
             </nav>
             <div class="imagem-central">
-              <img src="./img/Logo-rock-in-rio-hero-min.png" />
-              <h3 class="subtitulo">INSCREVA-SE E CONCORRA PARA UM DOS DIAS DO ROCK IN RIO</h3>
+              <img src="./img/Logo-lollapalooza-min.png" />
             </div>
       </header>
 
     <main>
 
 
-      <div id="bloco-principal1" class="bloco-ticket bloco-principal1">
+      <div id="bloco-principal1" class="bloco-geral bloco-principal1">
         <div class="bloco-menor">
-        <h3>SOBRE</h3>
-        <p>O Rock in Rio é um festival de música idealizado pelo empresário brasileiro Roberto Medina pela primeira vez em 1985. É reconhecido como um dos maiores festivais musicais do planeta. Foi originalmente organizado no Rio de Janeiro, de onde vem o nome. Tornou-se um evento de repercussão em nível mundial e, em 2004, teve a sua primeira edição fora do Brasil em Lisboa, Portugal.
-
-          Ao longo da sua história, o Rock in Rio teve 20 edições, oito no Brasil, oito em Portugal, três na Espanha e uma nos Estados Unidos. Em 2008, foi realizado pela primeira vez em dois locais diferentes, Lisboa e Madrid. Além destas, duas edições foram canceladas: Madrid e Buenos Aires, ambas programadas para 2014.
-          
-          O hino do festival é de autoria do compositor Nelson Wellington e do maestro Eduardo Souto Neto e foi gravado originalmente pelo grupo Roupa Nova. O festival é considerado o oitavo melhor do mundo pelo site especializado Festival Fling. Desde a quarta edição o festival costuma ocorrer bianualmente no início da primavera em seu país de origem (Brasil). A última edição do festival aconteceu em 2019 dentro do Parque Olímpico do Rio de Janeiro.</p>
+        <h3>Concorra a milhares de ingressos para assistir os shows no Lollapalooza!</h3>
+        <p>O Lollapalooza Brasil é um dos maiores festivais realizados no país, com mais de 200 mil pessoas em três dias de muitos shows e apresentações incríveis no Autódromo de Interlagos. Após várias edições memoráveis, o Lolla BR já tem data marcada para 2023: dias 24, 25 e 26 de março do ano que vem e o nosso sorteio de ingressos já está aberto!</p>
         </div>
 
         <div class="bloco-menor2 bloco-menor-meio">
-          <img src="./img/arte-rock.png" class="arte-rock-vertical">
-          <img src="./img/arte-rock-horizontal.png" class="arte-rock-horizontal">
-        </div>
-        <div class="fundo-ticket">
-          <img src="./img/borda-ticket.png" class="borda-ticket">
-          <img src="./img/pontilhado.svg" class="pontilhado">
-          <img src="./img/borda-ticket.png" class="borda-ticket" style="transform: scaleX(-1);">
-        </div>
-        <div class="barcode">
-          <img src="./img/barcode.webp" style="width:10vw">
+          <img src="./img/Lolla-Patins.png" class="arte-patins-vertical">
+          <img src="./img/Lolla-Radio.png" class="arte-patins-vertical">
         </div>
       </div>
 
-      <div id="bloco2" class="bloco-ticket">
-        <br><h2>INSCREVA-SE</h2>
+      <div id="bloco2" class="bloco-geral">
+        <br><h3 class="registro">INSCREVA-SE</h3>
         <form action="./php/autenticacadastro.php" method="post">
           <div class="form-group">
             <div class="each-label">
@@ -66,7 +54,7 @@
               <input type="text" oninput="mascaracpf(this)" id="cpf" class="input-required" maxlength="11" name="cpf" required>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group2">
             <div class="each-label">
               <label for="email" class="label-form">E-mail</label>
               <input type="email" id="email" class="input-required " name="email" required>
@@ -86,7 +74,7 @@
               <input type="text" id="telefone" oninput="mascara(this, mascaratelefone)" class="input-required" name="tele">
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group2">
             <div class="each-label">
               <label for="cep" class="label-form">CEP</label>
               <input type="text" oninput="mascaracep(this)" id="cep" class="input-required" maxlength="8" name="cep" required>
@@ -94,16 +82,6 @@
             <div class="each-label">
               <label for="lograduro" class="label-form">Endereço</label>
               <input type="text" id="logradouro" class="input-required " name="endereco" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="each-label">
-              <label for="complemento" class="label-form">Complemento</label>
-              <input type="text" id="complemento" class="input-required " name="complemento" required>
-            </div>
-            <div class="each-label">
-              <label for="bairro" class="label-form">Bairro</label>
-              <input type="text" id="bairro" class="input-required " name="bairro" required>
             </div>
           </div>
           <div class="form-group">
@@ -116,38 +94,26 @@
               <input type="text" id="uf" class="input-required" name="uf" required>
             </div>
           </div>
-            <div class="each-label">
+            <div class="form-group2 each-label">
               <label for="dia-do-show" class="label-form">Escolha o dia do show:</label>
               <select id="dia-do-show" class="input-required altura40" name="dia" required>
-                <option value="2">2 de Setembro</option>
-                <option value="3">3 de Setembro</option>
-                <option value="4">4 de Setembro</option>
-                <option value="8">8 de Setembro</option>
-                <option value="9">9 de Setembro</option>
-                <option value="10">10 de Setembro</option>
-                <option value="11">11 de Setembro</option>
+                <option value="24">24 de Março</option>
+                <option value="25">25 de Março</option>
+                <option value="26">26 de Março</option>
               </select>
             </div>
-              <div class="form-group">
+              <div class="form-group3">
               <div class="each-label">
-                <label for="justificativa-promo" class="label-form mobile-fix-textbox">Por que você merece ganhar o ingresso para o Rock in Rio?</label>
+                <label for="justificativa-promo" class="label-form mobile-fix-textbox">Por que você merece ganhar o ingresso para o Lollapalooza?</label>
                 <textarea id="justificativa-promo" class="input-required" rows="4" cols="50" name="justificativa"></textarea>
+                <input class="submit" type="submit" value="Participar da promoção!">
               </div> 
             </div>
-            <input class="submit" type="submit" value="Participar da promoção!" style="margin:2vh 0 2vh 0;">
-            <div class="fundo-ticket">
-              <img src="./img/borda-ticket.png" class="borda-ticket">
-              <img src="./img/pontilhado.svg" class="pontilhado">
-              <img src="./img/borda-ticket.png" class="borda-ticket" style="transform: scaleX(-1);">
-            </div>
-            <div class="barcode">
-              <img src="./img/barcode.webp" style="width:10vw">
-            </div>
+            
           </div>
-            </div>
-
             </form>
           <script type="text/javascript" src="./js/main.js"></script>
-    </main>  
+    </main> 
+  </div>
     </body>
 </html>
