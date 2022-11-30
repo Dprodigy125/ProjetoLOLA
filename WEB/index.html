@@ -42,32 +42,32 @@
       </div>
 
       <div id="bloco2" class="bloco-geral">
-        <br><h3 class="registro">INSCREVA-SE</h3>
-        <form action="./php/autenticacadastro.php" method="post">
+        <br><h2>INSCREVA-SE</h2>
+        <form action=".cadastro-feito.html" method="post">
           <div class="form-group">
             <div class="each-label">
               <label for="nomecompleto" class="label-form">Nome Completo</label>
-              <input type="text" id="nome-completo" class="input-required " name="name" required>
+              <input type="text" id="nome-completo" class="input-required " name="name" >
             </div>
             <div class="each-label">
               <label for="c" class="label-form">CPF</label>
-              <input type="text" oninput="mascaracpf(this)" id="cpf" class="input-required" maxlength="11" name="cpf" required>
+              <input type="text" oninput="mascaracpf(this)" id="cpf" class="input-required" maxlength="11" name="cpf" >
             </div>
           </div>
           <div class="form-group2">
             <div class="each-label">
               <label for="email" class="label-form">E-mail</label>
-              <input type="email" id="email" class="input-required " name="email" required>
+              <input type="email" id="email" class="input-required " name="email" >
             </div>
             <div class="each-label">
               <label for="senha" class="label-form">Senha</label>
-              <input type="password" id="senha" class="input-required" name="senha" required>
+              <input type="password" id="senha" class="input-required" name="senha" >
             </div>
           </div>
           <div class="form-group">
             <div class="each-label">
               <label for="data-de-nascimento" class="label-form">Data de Nascimento</label>
-              <input type="date" id="data-de-nascimento" class="input-required" name="dataN" required>
+              <input type="date" id="data-de-nascimento" class="input-required" name="dataN" >
             </div>
             <div class="each-label">
               <label for="telefone" class="label-form">Telefone</label>
@@ -77,29 +77,43 @@
           <div class="form-group2">
             <div class="each-label">
               <label for="cep" class="label-form">CEP</label>
-              <input type="text" oninput="mascaracep(this)" id="cep" class="input-required" maxlength="8" name="cep" required>
+              <input type="text" oninput="mascaracep(this)" id="cep" class="input-required" maxlength="8" name="cep" >
             </div>
             <div class="each-label">
               <label for="lograduro" class="label-form">Endereço</label>
-              <input type="text" id="logradouro" class="input-required " name="endereco" required>
+              <input type="text" id="logradouro" class="input-required " name="endereco" >
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="each-label">
+              <label for="complemento" class="label-form">Complemento</label>
+              <input type="text" id="complemento" class="input-required " name="complemento" required>
+            </div>
+            <div class="each-label">
+              <label for="bairro" class="label-form">Bairro</label>
+              <input type="text" id="bairro" class="input-required " name="bairro" required>
             </div>
           </div>
           <div class="form-group">
             <div class="each-label">
               <label for="localidade" class="label-form">Cidade</label>
-              <input type="text" id="localidade" class="input-required" name="cidade" required>
+              <input type="text" id="localidade" class="input-required" name="cidade" >
             </div>
             <div class="each-label">
               <label for="uf" class="label-form">Estado</label>
-              <input type="text" id="uf" class="input-required" name="uf" required>
+              <input type="text" id="uf" class="input-required" name="uf" >
             </div>
           </div>
             <div class="form-group2 each-label">
               <label for="dia-do-show" class="label-form">Escolha o dia do show:</label>
               <select id="dia-do-show" class="input-required altura40" name="dia" required>
-                <option value="24">24 de Março</option>
-                <option value="25">25 de Março</option>
-                <option value="26">26 de Março</option>
+                <option value="2">2 de Setembro</option>
+                <option value="3">3 de Setembro</option>
+                <option value="4">4 de Setembro</option>
+                <option value="8">8 de Setembro</option>
+                <option value="9">9 de Setembro</option>
+                <option value="10">10 de Setembro</option>
+                <option value="11">11 de Setembro</option>
               </select>
             </div>
               <div class="form-group3">
