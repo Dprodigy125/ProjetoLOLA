@@ -23,6 +23,9 @@ public class UsuarioBD extends SQLiteOpenHelper implements IUsuarioBD {
                 this.contexto = context;
         }
 
+    public static void OnCreate() {
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String sql = "CREATE TABLE usuarios (" +

@@ -93,26 +93,6 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/user_nascimento"
-                style="@style/Text_Dados"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_marginTop="4dp"
-                android:text="@string/data"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/user_cpf"
-                style="@style/Text_Dados"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_marginTop="4dp"
-                android:text="@string/cpf"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
                 android:id="@+id/textView29"
                 style="@style/textoII"
                 android:layout_width="match_parent"
@@ -120,16 +100,6 @@
                 android:layout_margin="4dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/endereco"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/user_cep"
-                style="@style/Text_Dados"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_marginTop="4dp"
-                android:text="@string/cep"
                 tools:ignore="MissingConstraints" />
 
             <TextView

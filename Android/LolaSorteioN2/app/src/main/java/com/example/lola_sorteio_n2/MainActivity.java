@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.lola_sorteio_n2.controladores.UsuarioBD;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        UsuarioBD.OnCreate();
 
     }
 
@@ -29,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     public void telaCadastro(View view)
     {
         Intent secondActivity = new Intent(this, TelaCadastro.class);
+        Bundle bolsa = new Bundle();
+        bolsa.putInt("id", 0);
+        secondActivity.putExtras(bolsa);
         startActivity((secondActivity));
     }
 }

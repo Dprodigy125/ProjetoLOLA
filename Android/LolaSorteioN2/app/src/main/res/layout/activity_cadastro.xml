@@ -82,28 +82,6 @@
                 android:inputType="text"
                 tools:ignore="MissingConstraints,TextFields" />
 
-            <EditText
-                android:id="@+id/edit_data"
-                style="@style/EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:hint="@string/data"
-                android:importantForAutofill="no"
-                android:inputType="date"
-                tools:ignore="MissingConstraints,TextFields" />
-
-            <EditText
-                android:id="@+id/edit_cpf"
-                style="@style/EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:hint="@string/cpf"
-                android:importantForAutofill="no"
-                android:inputType="number|text"
-                tools:ignore="MissingConstraints,TextFields" />
-
             <TextView
                 android:id="@+id/textView7"
                 style="@style/textoII"
@@ -113,18 +91,6 @@
                 android:layout_marginTop="4dp"
                 android:text="@string/endereco_string"
                 tools:ignore="MissingConstraints" />
-
-            <EditText
-                android:id="@+id/edit_cep"
-                style="@style/EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_margin="4dp"
-                android:hint="@string/cep"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                tools:ignore="MissingConstraints,TextFields" />
 
             <EditText
                 android:id="@+id/edit_endereco"
@@ -196,7 +162,7 @@
                 tools:ignore="MissingConstraints,TextFields" />
 
             <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btn_entrar"
+                android:id="@+id/btn_entrar_cadastro"
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
