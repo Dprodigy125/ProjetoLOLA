@@ -28,6 +28,7 @@ form{
     margin: 0 0 -50px 0;
 }
 
+
 .form-group{
     display: flex;
     flex-direction: column;
@@ -189,10 +190,15 @@ h3 {
 .bloco-geral{
     height: 40%;
     min-height: 400px;
-    margin: 30px 100px 0px 0px;
+    margin: 5% auto 0 0;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 25px;
 }
+
+.bloco-margem-1{
+    margin: 5%;
+}
+
 .borda-geral{
     width:3%;
 }
@@ -669,6 +675,7 @@ nav a:hover {
     .arte-patins-vertical{
         width: 38%;
     }
+
 
     .bloco-geral{
         display: flex;
