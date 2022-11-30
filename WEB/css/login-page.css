@@ -194,6 +194,26 @@ h3 {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 25px;
 }
+.form-php{
+    width: 65%;
+    margin: 0 auto;
+    grid-template-columns: [first] 10% [line2] 80% [line3] 10% [end];
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.bloco-geral-php{
+    padding: 2%;
+    display: flex;
+    height: auto;
+    margin: 5% auto 0 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    flex-direction: column;
+}
 
 .bloco-margem-1{
     margin: 5%;

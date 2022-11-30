@@ -6,6 +6,20 @@
         <link rel="stylesheet" type="text/css" href="./css/login-page.css">
         <title>Projeto Lollapalooza - Desenvolvimento Mobile 6o Semestre</title>
         <style>
+          form{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            grid-template-columns: [first] 10% [line2] 80% [line3] 10% [end];
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+          .arte-patins-vertical{
+            width:80%;
+            padding:5%;
+          }
           @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
           </style>
     </head>
@@ -16,15 +30,18 @@
         <ul class="nav-list">
         <li><a href="./index.html">HOME</a></li>
           <li><a href="./regulamento.html">REGULAMENTO</a></li>
-          <li><a href="./login.html">VERIFICAR CADASTRO</a></li>
           <li><a href="./php/logout.php">SAIR</a></li>
         </ul>
         </nav>
   </header>
   
   <body>
+
   <main>
-      <div id="bloco-login" class="bloco-ticket bloco-login">
+    <div id="bloco-sem-geral" class="bloco-sem-geral">
+      <img src="./img/Lolla-Patins.png" class="arte-patins-horizontal">
+  </div>
+      <div id="bloco-login" class="bloco-geral-php bloco-principal1">
         <img src="">
         <h2>Página do Sorteio</h2>
        
@@ -67,16 +84,12 @@
         ?>
            
      
-        <form method="post">
+        <form class="form-php" method="post">
             
 
         <input class="submit" type="submit" value="Sortear" name="botao">
         </div>
         <div><p><?php $_SESSION['nome']  ?></p></div>
-        <div id="bloco-sem-ticket" class="bloco-sem-ticket">
-          <img src="./img/arte-rock.png" class="arte-rock-vertical">
-          <img src="./img/arte-rock-horizontal.png" class="arte-rock-horizontal">
-      </div>
     </div> 
 
     </div>
